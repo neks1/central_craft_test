@@ -1,0 +1,53 @@
+html {
+  @include box();
+  font-size: 100%;
+  height: 100%;
+  @include ff($helvetica, $normal)
+
+  body {
+    height: 100%;
+  }
+
+  * {
+    @include box(inherit);
+    font-size: 14px;
+    outline: none;
+  }
+}
+
+*:before,
+*:after {
+  @include box();
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  @include transition(all .4s ease-in-out);
+  font-size: 16px;
+
+  &:hover {
+    @include transition(all .4s ease-in-out);
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: $normal;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: $small_width) {
+  h2 {
+    font-size: 36px;
+  }
+}

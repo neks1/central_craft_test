@@ -1,0 +1,35 @@
+.craft-center {
+  background: $rose;
+  color: $white;
+  padding-bottom: 110px;
+  text-align: center;
+
+  h2 {
+    padding: 60px 0px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: $light;
+  }
+
+  p:last-child {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  p a {
+    @include main-btn($rose, 2px);
+
+
+    &:before {
+      @include arrow-right($dark-rose, 2px, -2px, 44px);
+    }
+  }
+}
+
+@media screen and (min-width: $small_width) {
+  .craft-center p a:before {
+    height: 57px;
+  }
+}

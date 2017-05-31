@@ -1,0 +1,27 @@
+.footer {
+  overflow: hidden;
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  .f-address {
+    background: $grey;
+    padding: 30px 0;
+
+    p {
+      color: $dark-grey;
+    }
+  }
+
+  .f-copyright {
+    background: $copyright;
+    padding: 30px 0;
+
+    p {
+      color: $white;
+    }
+  }
+}

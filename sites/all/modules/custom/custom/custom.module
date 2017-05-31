@@ -1,0 +1,33 @@
+<?php
+
+/**
+ *  @file
+ *  Provide main module for custom functionality.
+ */
+
+  module_load_include('inc', 'custom','custom.pages');
+  module_load_include('inc', 'custom','custom.form');
+  module_load_include('inc', 'custom','custom');
+  module_load_include('inc', 'custom','custom.block');
+
+
+function custom_form_alter(&$form, &$form_state, $form_id){
+  if($form_id == "views_exposed_form"){
+    if (isset($form['title'])) {
+      $form['title']['#attributes'] = array('placeholder' => array(t('Search by name')));
+    }
+  }
+  if ($form_id == 'user_login_block') {
+    unset($form['links']);
+    unset($form['name']['#title']);
+    unset($form['pass']['#title']);
+
+    $form['actions']['submit']['#suffix'] = l(t('Forgot your email?'), 'user/password');
+    $form['actions']['submit']['#value'] = t('Login');
+
+    $form['name']['#prefix'] = "<h3>" . t('Login') . "</h3>";
+
+    $form['name']['#attributes'] = array('placeholder' => array(t('Email')));
+    $form['pass']['#attributes'] = array('placeholder' => array(t('Password')));
+  }
+}

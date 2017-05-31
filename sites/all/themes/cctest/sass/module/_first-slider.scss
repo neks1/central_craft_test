@@ -1,0 +1,37 @@
+.main-slider {
+  background: $grey;
+
+  .left {
+    margin: 0 auto;
+    width: 275px;
+    padding-bottom: 35px;
+  }
+
+  .right img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: $small_width) {
+  .main-slider {
+
+    .node-main-slider {
+      @include flex-box;
+      align-items: flex-end;
+    }
+
+    .left {
+      margin: 0;
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (min-width: $main_width) {
+  .main-slider {
+
+    .left {
+      width: 50%;
+    }
+  }
+}

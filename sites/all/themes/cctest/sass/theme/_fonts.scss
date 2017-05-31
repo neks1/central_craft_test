@@ -1,0 +1,14 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+$lato: 'Roboto', sans-serif;
+
+@include font('Helvetica', HelveticaRegular, 400, normal);
+@include font('Helvetica', HelveticaLight, 300, normal);
+
+$helvetica: 'Helvetica', sans-serif;
+
+$light: 300;
+$normal: 400;
+$bold: 700;

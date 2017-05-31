@@ -1,0 +1,51 @@
+.mailing-list {
+  margin-bottom: 30px;
+
+  h2 {
+    color: $light-black;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .form-item {
+    margin-bottom: 30px;
+  }
+
+  input[type="submit"] {
+    background: $light-black url(../images/icons/arrow.png) no-repeat center;
+    background-size: 25px;
+    font-size: 0;
+    height: 50px;
+    width: 60px;
+  }
+}
+
+@media screen and (min-width: $small_width) {
+  .mailing-list {
+
+    .webform-client-form {
+
+      > div {
+        @include flex-box;
+        justify-content: space-between;
+      }
+
+      .form-item {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $medium_width) {
+  .mailing-list .webform-client-form .form-item {
+    width: 250px;
+  }
+}
+
+
+@media screen and (min-width: $main_width) {
+  .mailing-list .webform-client-form .form-item {
+    width: 320px;
+  }
+}

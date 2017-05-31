@@ -1,0 +1,59 @@
+.upcoming-events {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 5px;
+  padding-top: 45px;
+
+  h2 {
+    color: $white;
+  }
+
+  .pane-title {
+    border-left: 5px solid $rose;
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+
+  .views-row {
+    min-height: 404px;
+    position: relative;
+
+    .field-name-title {
+      margin-top: 20px;
+    }
+
+    .field-name-field-image {
+      display: none;
+    }
+  }
+
+  .slick-dots {
+
+    li button {
+      border: 2px solid $white;
+      background: transparent;
+    }
+
+    li.slick-active button {
+      background: $white;
+      border: 2px solid $white;
+    }
+  }
+}
+
+@media screen and (min-width: $small_width) {
+  .upcoming-events {
+
+    .views-row {
+
+      .field-name-title {
+        margin-top: 105px;
+      }
+    }
+
+    .slick-dots {
+      bottom: 55px;
+    }
+  }
+}

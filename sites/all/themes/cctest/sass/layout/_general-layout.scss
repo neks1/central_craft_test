@@ -1,0 +1,47 @@
+.container {
+  @include container();
+}
+
+.padding {
+  @include gutter;
+}
+
+.row {
+  @include row;
+}
+
+@media screen and (min-width: $medium_width) {
+
+  .two-sidebars {
+    @include row;
+
+    .first-sidebar,
+    .second-sidebar {
+      width: 25%;
+    }
+
+    .first-sidebar,
+    .second-sidebar,
+    .main-content {
+      @include gutter;
+      float: left;
+    }
+  }
+
+  // When two sidebars exists
+  .two-sidebars {
+
+    .main-content {
+      width: 50%;
+    }
+  }
+
+  // When only first sidebar exists
+  .sidebar-first,
+  .sidebar-second {
+
+    .main-content {
+      width: 75%;
+    }
+  }
+}

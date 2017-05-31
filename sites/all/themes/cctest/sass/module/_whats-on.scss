@@ -1,0 +1,85 @@
+.whats-on {
+  @include half-bg-gradient($white, $grey);
+}
+
+.picture {
+  padding-bottom: 50px;
+  padding-top: 100px;
+
+  .views-row .node {
+    @include transition(all 1s ease);
+    display: none;
+  }
+
+  .views-row-first .node {
+    display: block;
+  }
+
+  .field-name-title {
+    position: relative;
+  }
+
+  .field-name-title h2 {
+    background: $blue;
+    color: $white;
+    display: inline-block;
+    padding: 18px 25px 10px 25px;
+  }
+
+  .field-name-field-short-text-1 .field-item {
+    background: $dark-blue;
+    color: $white;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 15px 27px 10px 27px;
+  }
+
+  .field-name-field-image {
+    @include transform(rotate(45deg) translateY(0px));
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    transform-origin: 50% 50%;
+    width: 200px;
+
+    .field-item {
+      @include transform(rotate(-45deg) translateY(-61px));
+      height: 285px;
+      width: 285px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: $small_width) {
+  .picture {
+    float: left;
+    padding-left: 55px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: $medium_width) {
+  .picture {
+
+    .field-name-field-image {
+      @include transform(rotate(45deg) translateY(10px));
+      height: 300px;
+      margin-bottom: 25px;
+      margin-left: 65px;
+      margin-top: 45px;
+      width: 300px;
+    }
+
+    .field-name-field-image .field-item {
+      @include transform(rotate(-45deg) translateY(-88px))
+      height: 425px;
+      width: 425px;
+    }
+  }
+}

@@ -1,0 +1,1583 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/base/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/base/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/base/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/base/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* color */
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaRegular.eot");
+  src: url("../fonts/HelveticaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaRegular.woff") format("woff"), url("../fonts/HelveticaRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaLight.eot");
+  src: url("../fonts/HelveticaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaLight.woff") format("woff"), url("../fonts/HelveticaLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+.container {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media screen and (min-width: 768px) {
+  /* line 1, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px; } }
+
+@media screen and (min-width: 992px) {
+  /* line 1, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 970px; } }
+
+@media screen and (min-width: 1200px) {
+  /* line 1, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px; } }
+
+/* line 5, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+.padding {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 9, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+@media screen and (min-width: 992px) {
+  /* line 15, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+  .two-sidebars {
+    margin-left: -15px;
+    margin-right: -15px; }
+  /* line 18, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+  .two-sidebars .first-sidebar,
+  .two-sidebars .second-sidebar {
+    width: 25%; }
+  /* line 23, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+  .two-sidebars .first-sidebar,
+  .two-sidebars .second-sidebar,
+  .two-sidebars .main-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left; }
+  /* line 34, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+  .two-sidebars .main-content {
+    width: 50%; }
+  /* line 43, /var/www/cctest/sites/all/themes/cctest/sass/layout/_general-layout.scss */
+  .sidebar-first .main-content,
+  .sidebar-second .main-content {
+    width: 75%; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/base/_base.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+  height: 100%;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 400; }
+
+/* line 7, /var/www/cctest/sites/all/themes/cctest/sass/base/_base.scss */
+html body {
+  height: 100%; }
+
+/* line 11, /var/www/cctest/sites/all/themes/cctest/sass/base/_base.scss */
+html * {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: 14px;
+  outline: none; }
+
+/* line 18, /var/www/cctest/sites/all/themes/cctest/sass/base/_base.scss */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 23, /var/www/cctest/sites/all/themes/cctest/sass/base/_base.scss */
+img {
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
+/* line 29, /var/www/cctest/sites/all/themes/cctest/sass/base/_base.scss */
+a {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-size: 16px; }
+
+/* line 33, /var/www/cctest/sites/all/themes/cctest/sass/base/_base.scss */
+a:hover {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+/* line 38, /var/www/cctest/sites/all/themes/cctest/sass/base/_base.scss */
+p {
+  font-size: 16px;
+  line-height: 1.2; }
+
+/* line 43, /var/www/cctest/sites/all/themes/cctest/sass/base/_base.scss */
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3; }
+
+@media screen and (min-width: 768px) {
+  /* line 50, /var/www/cctest/sites/all/themes/cctest/sass/base/_base.scss */
+  h2 {
+    font-size: 36px; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+input,
+button,
+input *,
+button * {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none; }
+
+/* line 8, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+input:focus, input:hover, input:active,
+button:focus,
+button:hover,
+button:active,
+input *:focus,
+input *:hover,
+input *:active,
+button *:focus,
+button *:hover,
+button *:active {
+  outline: none; }
+
+/* line 28, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+select:hover {
+  cursor: pointer; }
+
+/* line 35, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox; }
+
+/* line 53, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+input[type="password"],
+input[type="email"],
+input[type="text"] {
+  background: #fff;
+  border: 2px solid #454a5b;
+  color: rgba(111, 117, 136, 0.7);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;
+  width: 100%;
+  padding: 14px 25px; }
+
+/* line 38, /var/www/cctest/sites/all/themes/cctest/sass/mixins/_mixins.sass */
+input[type="password"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="text"]:-moz-placeholder {
+  color: rgba(111, 117, 136, 0.7); }
+
+/* line 40, /var/www/cctest/sites/all/themes/cctest/sass/mixins/_mixins.sass */
+input[type="password"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder {
+  color: rgba(111, 117, 136, 0.7); }
+
+/* line 67, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+input[type="submit"] {
+  background: #ed1c8b;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 19px 12px 13px 12px;
+  width: 100%; }
+
+/* line 79, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+.select2-container {
+  border: 2px solid #454a5b; }
+
+/* line 83, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+.select2-container--default .select2-selection--single {
+  border-radius: 0; }
+
+/* line 87, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+.select2-selection__arrow {
+  background: #454a5b; }
+
+/* line 91, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #fff transparent transparent transparent; }
+
+/* line 95, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+.select2-container .select2-selection--single {
+  height: 46px; }
+
+/* line 99, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+.select2-container .select2-selection--single .select2-selection__rendered {
+  color: rgba(111, 117, 136, 0.7);
+  padding: 10px 25px; }
+
+/* line 104, /var/www/cctest/sites/all/themes/cctest/sass/base/_forms.scss */
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 46px;
+  right: 0;
+  top: 0;
+  width: 50px; }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member {
+  background: url(../images/member-bg.png) no-repeat center;
+  padding-bottom: 55px; }
+
+/* line 5, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member h2 {
+  color: #fff;
+  padding-top: 40px;
+  text-align: center; }
+
+/* line 11, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member p {
+  color: #fff; }
+
+/* line 15, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 2.2;
+  text-transform: uppercase; }
+
+/* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member .sub-title {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;
+  padding-top: 40px;
+  text-align: center; }
+
+/* line 30, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member .wrapper {
+  margin: 40px 0; }
+
+/* line 33, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member .wrapper div {
+  background-size: 65px;
+  margin-bottom: 30px;
+  padding-left: 90px; }
+
+/* line 39, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member .wrapper p {
+  line-height: 2.2; }
+
+/* line 44, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member .promo {
+  background: url(../images/icons/voice.png) no-repeat top left; }
+
+/* line 48, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member .develop {
+  background: url(../images/icons/light.png) no-repeat top left; }
+
+/* line 52, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member .support {
+  background: url(../images/icons/token.png) no-repeat top left; }
+
+/* line 58, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member .url-button a {
+  background-color: #00bff3;
+  border: 0 solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 18px 15px 11px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 768px) {
+  /* line 58, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+  .become-member .url-button a {
+    font-size: 16px;
+    padding: 23px 35px 16px 35px; } }
+
+/* line 62, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+.become-member .url-button a:before {
+  background-color: #00b0e0;
+  background-image: url(../images/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  content: '';
+  display: block;
+  position: absolute;
+  border: 0 solid #fff;
+  height: 40px;
+  right: -35px;
+  top: 0;
+  width: 35px; }
+
+@media screen and (min-width: 768px) {
+  /* line 62, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+  .become-member .url-button a:before {
+    background-size: 25px;
+    height: 53px;
+    right: -61px;
+    width: 61px; } }
+
+@media screen and (min-width: 768px) {
+  /* line 71, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+  .become-member .wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between; }
+  /* line 76, /var/www/cctest/sites/all/themes/cctest/sass/module/_become-member.scss */
+  .become-member .url-button {
+    text-align: center; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+.book-space {
+  background: #00bff3;
+  padding: 40px 0; }
+
+/* line 5, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+.book-space h2 {
+  border-left: 5px solid #fff;
+  color: #fff;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-top: 5px; }
+
+/* line 15, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+.book-space .field-name-field-text p {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 30px; }
+
+/* line 21, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+.book-space .field-name-field-text h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px; }
+
+/* line 28, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+.book-space .right {
+  margin: 0 auto;
+  width: 260px; }
+
+/* line 33, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+.book-space .field-name-field-short-text-1 {
+  background: #fff;
+  margin-bottom: 30px;
+  min-height: 115px;
+  overflow: hidden;
+  padding: 30px; }
+
+/* line 40, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+.book-space .field-name-field-short-text-1 .field-item {
+  color: #454a5b;
+  font-size: 16px;
+  line-height: 1.7;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 768px) {
+  /* line 52, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+  .book-space .bean-two-column {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex; }
+  /* line 56, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+  .book-space .left {
+    margin-right: 2%;
+    width: 53%; }
+  /* line 61, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+  .book-space .right {
+    width: 100%; }
+  /* line 66, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+  .book-space .right .field-name-field-image-text-paragraph > .field-items {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between; }
+  /* line 71, /var/www/cctest/sites/all/themes/cctest/sass/module/_book-space.scss */
+  .book-space .right .field-name-field-image-text-paragraph > .field-items > .field-item {
+    width: 48%; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_craft-central.scss */
+.craft-center {
+  background: #ed1c8b;
+  color: #fff;
+  padding-bottom: 110px;
+  text-align: center; }
+
+/* line 7, /var/www/cctest/sites/all/themes/cctest/sass/module/_craft-central.scss */
+.craft-center h2 {
+  padding: 60px 0px; }
+
+/* line 11, /var/www/cctest/sites/all/themes/cctest/sass/module/_craft-central.scss */
+.craft-center p {
+  font-size: 16px;
+  font-weight: 300; }
+
+/* line 16, /var/www/cctest/sites/all/themes/cctest/sass/module/_craft-central.scss */
+.craft-center p:last-child {
+  text-align: center;
+  margin-top: 60px; }
+
+/* line 21, /var/www/cctest/sites/all/themes/cctest/sass/module/_craft-central.scss */
+.craft-center p a {
+  background-color: #ed1c8b;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 18px 15px 11px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 768px) {
+  /* line 21, /var/www/cctest/sites/all/themes/cctest/sass/module/_craft-central.scss */
+  .craft-center p a {
+    font-size: 16px;
+    padding: 23px 35px 16px 35px; } }
+
+/* line 25, /var/www/cctest/sites/all/themes/cctest/sass/module/_craft-central.scss */
+.craft-center p a:before {
+  background-color: #d80780;
+  background-image: url(../images/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #fff;
+  height: 44px;
+  right: -35px;
+  top: -2px;
+  width: 35px; }
+
+@media screen and (min-width: 768px) {
+  /* line 25, /var/www/cctest/sites/all/themes/cctest/sass/module/_craft-central.scss */
+  .craft-center p a:before {
+    background-size: 25px;
+    height: 53px;
+    right: -61px;
+    width: 61px; } }
+
+@media screen and (min-width: 768px) {
+  /* line 32, /var/www/cctest/sites/all/themes/cctest/sass/module/_craft-central.scss */
+  .craft-center p a:before {
+    height: 57px; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+.existing-partners {
+  padding-bottom: 30px; }
+
+/* line 4, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+.existing-partners h2 {
+  color: #454a5b;
+  font-size: 24px;
+  padding-bottom: 40px;
+  padding-top: 20px; }
+
+/* line 11, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+.existing-partners .view-content {
+  margin: 0 auto;
+  width: 230px; }
+
+/* line 16, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+.existing-partners img {
+  margin: 0 auto; }
+
+/* line 20, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+.existing-partners .slick-track {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center; }
+
+/* line 25, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+.existing-partners .slick-arrow {
+  width: 23px;
+  height: 23px; }
+
+/* line 29, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+.existing-partners .slick-arrow:before {
+  display: none; }
+
+/* line 34, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+.existing-partners .slick-prev {
+  background: url(../images/icons/arrow-l.png) no-repeat center;
+  background-size: 13px; }
+
+/* line 39, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+.existing-partners .slick-next {
+  background: url(../images/icons/arrow-r.png) no-repeat center;
+  background-size: 13px; }
+
+@media screen and (min-width: 768px) {
+  /* line 46, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+  .existing-partners .view-content {
+    width: 650px; } }
+
+@media screen and (min-width: 992px) {
+  /* line 52, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+  .existing-partners .view-content {
+    width: 850px; } }
+
+@media screen and (min-width: 1200px) {
+  /* line 58, /var/www/cctest/sites/all/themes/cctest/sass/module/_existing-partners.scss */
+  .existing-partners .view-content {
+    width: 1000px; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker {
+  background: #dadadc;
+  padding-bottom: 50px; }
+
+/* line 5, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker h2 {
+  color: rgba(69, 74, 91, 0.5);
+  line-height: 54px;
+  padding-bottom: 80px;
+  padding-top: 94px;
+  text-align: center; }
+
+/* line 13, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker form {
+  margin: 0 auto;
+  width: 262px; }
+
+/* line 18, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .view-filters {
+  margin-bottom: 80px; }
+
+/* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .right {
+  background: #fff;
+  padding: 30px; }
+
+/* line 27, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .views-widget-filter-title {
+  position: relative; }
+
+/* line 30, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .views-widget-filter-title label {
+  background: #454a5b url(../images/icons/s-search.png) no-repeat center;
+  background-size: 25px;
+  cursor: text;
+  font-size: 0;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  width: 60px;
+  top: 0; }
+
+/* line 43, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .ajax-progress.ajax-progress-throbber {
+  display: none; }
+
+/* line 47, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .views-widget-filter-title,
+.find-designer-maker .views-widget-filter-tid {
+  margin-bottom: 30px; }
+
+/* line 52, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .views-exposed-widget {
+  padding: 0; }
+
+/* line 55, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .views-exposed-widget .views-submit-button {
+  display: none; }
+
+/* line 63, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .views-widget-filter-tid label,
+.find-designer-maker .views-widget-filter-tid_1 label {
+  display: none; }
+
+/* line 68, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .view .view-content {
+  margin: 0 auto 60px auto;
+  overflow: hidden;
+  width: 275px; }
+
+/* line 74, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .field-name-title {
+  margin-bottom: 20px; }
+
+/* line 77, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .field-name-title p {
+  color: #4f5163;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1; }
+
+/* line 86, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .field-name-field-link a {
+  color: #4f5163;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+/* line 95, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .views-row {
+  margin-bottom: 30px; }
+
+/* line 98, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .views-row img {
+  margin: 0 auto; }
+
+/* line 103, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .view-footer a {
+  background-color: #ed1c8b;
+  border: 0 solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 18px 15px 11px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 768px) {
+  /* line 103, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+  .find-designer-maker .view-footer a {
+    font-size: 16px;
+    padding: 23px 35px 16px 35px; } }
+
+/* line 106, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+.find-designer-maker .view-footer a:before {
+  background-color: #d80780;
+  background-image: url(../images/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  content: '';
+  display: block;
+  position: absolute;
+  border: 0 solid #fff;
+  height: 40px;
+  right: -35px;
+  top: 0;
+  width: 35px; }
+
+@media screen and (min-width: 768px) {
+  /* line 106, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+  .find-designer-maker .view-footer a:before {
+    background-size: 25px;
+    height: 53px;
+    right: -61px;
+    width: 61px; } }
+
+@media screen and (min-width: 768px) {
+  /* line 115, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+  .find-designer-maker .view .view-content {
+    width: 100%; }
+  /* line 118, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+  .find-designer-maker .view .view-content .slick-list {
+    margin-left: -15px;
+    margin-right: -15px; }
+  /* line 123, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+  .find-designer-maker .view .view-content .views-row {
+    margin: 0 15px; }
+  /* line 128, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+  .find-designer-maker form {
+    width: 100%; }
+  /* line 132, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+  .find-designer-maker .views-widget-filter-title {
+    width: 40%; }
+  /* line 136, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+  .find-designer-maker .views-widget-filter-title,
+  .find-designer-maker .views-widget-filter-tid {
+    margin-right: 20px; } }
+
+@media screen and (min-width: 1200px) {
+  /* line 146, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+  .find-designer-maker .views-widget-filter-title {
+    width: 45%; }
+  /* line 150, /var/www/cctest/sites/all/themes/cctest/sass/module/_find-designer-maker.scss */
+  .find-designer-maker .views-widget-filter-title,
+  .find-designer-maker .views-widget-filter-tid {
+    margin-right: 51px; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
+.main-slider {
+  background: #dadadc; }
+
+/* line 4, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
+.main-slider .left {
+  margin: 0 auto;
+  width: 275px;
+  padding-bottom: 35px; }
+
+/* line 10, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
+.main-slider .right img {
+  margin: 0 auto; }
+
+@media screen and (min-width: 768px) {
+  /* line 18, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
+  .main-slider .node-main-slider {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-end; }
+  /* line 23, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
+  .main-slider .left {
+    margin: 0;
+    width: 75%; } }
+
+@media screen and (min-width: 1200px) {
+  /* line 33, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
+  .main-slider .left {
+    width: 50%; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_footer.scss */
+.footer {
+  overflow: hidden; }
+
+/* line 4, /var/www/cctest/sites/all/themes/cctest/sass/module/_footer.scss */
+.footer p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6; }
+
+/* line 10, /var/www/cctest/sites/all/themes/cctest/sass/module/_footer.scss */
+.footer .f-address {
+  background: #dadadc;
+  padding: 30px 0; }
+
+/* line 14, /var/www/cctest/sites/all/themes/cctest/sass/module/_footer.scss */
+.footer .f-address p {
+  color: #5f6463; }
+
+/* line 19, /var/www/cctest/sites/all/themes/cctest/sass/module/_footer.scss */
+.footer .f-copyright {
+  background: #3c4242;
+  padding: 30px 0; }
+
+/* line 23, /var/www/cctest/sites/all/themes/cctest/sass/module/_footer.scss */
+.footer .f-copyright p {
+  color: #fff; }
+
+/* line 3, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+.front-slider .field-name-title h2 {
+  background: #ed1c8b;
+  color: #fff;
+  display: inline-block;
+  padding: 18px 20px; }
+
+/* line 10, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+.front-slider .field-name-field-short-text-1 .field-item {
+  background: #d80780;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 55px;
+  padding: 12px 16px; }
+
+/* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+.front-slider .field-name-field-link a {
+  background-color: #ed1c8b;
+  border: 0 solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 18px 15px 11px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 768px) {
+  /* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+  .front-slider .field-name-field-link a {
+    font-size: 16px;
+    padding: 23px 35px 16px 35px; } }
+
+/* line 25, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+.front-slider .field-name-field-link a:before {
+  background-color: #d80780;
+  background-image: url(../images/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  content: '';
+  display: block;
+  position: absolute;
+  border: 0 solid #fff;
+  height: 40px;
+  right: -35px;
+  top: 0;
+  width: 35px; }
+
+@media screen and (min-width: 768px) {
+  /* line 25, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+  .front-slider .field-name-field-link a:before {
+    background-size: 25px;
+    height: 53px;
+    right: -61px;
+    width: 61px; } }
+
+/* line 32, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+.front-slider .slick-dots li {
+  height: 14px;
+  width: 14px; }
+
+/* line 37, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+.front-slider .slick-dots li button {
+  border: 2px solid #5f6463;
+  height: 14px;
+  width: 14px; }
+
+/* line 43, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+.front-slider .slick-dots li.slick-active button {
+  background: #5f6463;
+  border: 2px solid #5f6463; }
+
+/* line 48, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+.front-slider .slick-dots li button:before {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  /* line 55, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+  .front-slider {
+    font-size: 24px;
+    padding: 18px 25px; }
+  /* line 59, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+  .front-slider .field-name-field-short-text-1 .field-item {
+    font-size: 24px; } }
+
+@media screen and (min-width: 1200px) {
+  /* line 66, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+  .front-slider .slick-dots {
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+    width: auto; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_header.scss */
+.header {
+  background-color: #dadadc;
+  padding-top: 50px; }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central {
+  background: #dadadc;
+  padding: 40px 0; }
+
+/* line 5, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central h2 {
+  border-left: 5px solid #ed1c8b;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-top: 5px; }
+
+/* line 12, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .view .view-content {
+  margin: 0 auto 50px auto;
+  overflow: hidden;
+  width: 275px; }
+
+/* line 18, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row {
+  background: #fff;
+  position: relative;
+  min-height: 346px; }
+
+/* line 25, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row:hover .field:not(.field-name-field-image) {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 1;
+  position: relative;
+  z-index: 1; }
+
+/* line 32, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row:hover .field-name-field-image {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0;
+  z-index: 0; }
+
+/* line 39, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field-name-field-image {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  left: 0;
+  position: absolute;
+  top: 0; }
+
+/* line 46, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field:not(.field-name-field-image) {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0;
+  padding-left: 35px;
+  padding-right: 65px; }
+
+/* line 53, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field-name-title {
+  padding-top: 35px; }
+
+/* line 56, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field-name-title h3 {
+  color: #454a5b;
+  font-size: 24px;
+  font-weight: 300; }
+
+/* line 63, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field-name-body {
+  padding-bottom: 45px;
+  padding-top: 25px; }
+
+/* line 67, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field-name-body p {
+  color: #6f7588;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  min-height: 120px;
+  overflow: hidden; }
+
+/* line 77, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field-name-field-short-text-1 {
+  padding-bottom: 30px; }
+
+/* line 80, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field-name-field-short-text-1 .field-item {
+  color: #454a5b; }
+
+/* line 85, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field-name-field-like-share .field-items {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center; }
+
+/* line 89, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field-name-field-like-share .field-items .field-item {
+  margin-right: 10px; }
+
+/* line 95, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .view-footer a {
+  background-color: #ed1c8b;
+  border: 0 solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 18px 15px 11px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 768px) {
+  /* line 95, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  .latest-from-craft-central .view-footer a {
+    font-size: 16px;
+    padding: 23px 35px 16px 35px; } }
+
+/* line 98, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .view-footer a:before {
+  background-color: #d80780;
+  background-image: url(../images/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  content: '';
+  display: block;
+  position: absolute;
+  border: 0 solid #fff;
+  height: 40px;
+  right: -35px;
+  top: 0;
+  width: 35px; }
+
+@media screen and (min-width: 768px) {
+  /* line 98, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  .latest-from-craft-central .view-footer a:before {
+    background-size: 25px;
+    height: 53px;
+    right: -61px;
+    width: 61px; } }
+
+@media screen and (min-width: 768px) {
+  /* line 107, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  .latest-from-craft-central .view .view-content {
+    width: 100%; }
+  /* line 110, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  .latest-from-craft-central .view .view-content .slick-list {
+    margin-left: -15px;
+    margin-right: -15px; }
+  /* line 115, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  .latest-from-craft-central .view .view-content .views-row {
+    margin: 0 15px; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login {
+  float: left;
+  margin-left: 30px;
+  position: relative; }
+
+/* line 6, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login .login {
+  background: url(../images/icons/icon.png) no-repeat center;
+  background-size: 30px;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  margin-top: 6px;
+  position: relative;
+  width: 30px;
+  z-index: 2; }
+
+/* line 18, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login form {
+  display: none; }
+
+/* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login form {
+  background: #fff;
+  left: -15px;
+  padding: 65px 25px 30px 25px;
+  position: absolute;
+  top: -10px;
+  width: 200px;
+  z-index: 1; }
+
+/* line 31, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login form h3 {
+  color: #00bff3;
+  font-weight: 400;
+  margin-bottom: 35px;
+  margin-top: -40px;
+  padding-left: 40px; }
+
+/* line 39, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login form .form-item {
+  margin-bottom: 20px; }
+
+/* line 43, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login form input.form-text {
+  border-color: transparent transparent #5f6463 transparent;
+  padding-left: 5px; }
+
+/* line 48, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login form input.form-text:focus {
+  border-color: transparent transparent #00bff3 transparent; }
+
+/* line 52, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login form .form-actions {
+  text-align: center; }
+
+/* line 56, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login form input[type="submit"] {
+  color: #fff;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  text-transform: uppercase; }
+
+/* line 63, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+.pane-user-login form .form-actions a {
+  color: #6f7588;
+  text-decoration: none; }
+
+@media screen and (min-width: 768px) {
+  /* line 72, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
+  .pane-user-login form {
+    width: 300px; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_logo.scss */
+.pane-page-logo {
+  float: right;
+  width: 225px; }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_mailing-list.scss */
+.mailing-list {
+  margin-bottom: 30px; }
+
+/* line 4, /var/www/cctest/sites/all/themes/cctest/sass/module/_mailing-list.scss */
+.mailing-list h2 {
+  color: #454a5b;
+  padding: 40px 0;
+  text-align: center; }
+
+/* line 10, /var/www/cctest/sites/all/themes/cctest/sass/module/_mailing-list.scss */
+.mailing-list .form-item {
+  margin-bottom: 30px; }
+
+/* line 14, /var/www/cctest/sites/all/themes/cctest/sass/module/_mailing-list.scss */
+.mailing-list input[type="submit"] {
+  background: #454a5b url(../images/icons/arrow.png) no-repeat center;
+  background-size: 25px;
+  font-size: 0;
+  height: 50px;
+  width: 60px; }
+
+@media screen and (min-width: 768px) {
+  /* line 28, /var/www/cctest/sites/all/themes/cctest/sass/module/_mailing-list.scss */
+  .mailing-list .webform-client-form > div {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between; }
+  /* line 33, /var/www/cctest/sites/all/themes/cctest/sass/module/_mailing-list.scss */
+  .mailing-list .webform-client-form .form-item {
+    width: 200px; } }
+
+@media screen and (min-width: 992px) {
+  /* line 41, /var/www/cctest/sites/all/themes/cctest/sass/module/_mailing-list.scss */
+  .mailing-list .webform-client-form .form-item {
+    width: 250px; } }
+
+@media screen and (min-width: 1200px) {
+  /* line 48, /var/www/cctest/sites/all/themes/cctest/sass/module/_mailing-list.scss */
+  .mailing-list .webform-client-form .form-item {
+    width: 320px; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_main-menu.scss */
+.pane-system-main-menu {
+  float: left;
+  padding-top: 7px; }
+
+/* line 5, /var/www/cctest/sites/all/themes/cctest/sass/module/_main-menu.scss */
+.pane-system-main-menu .burger-menu {
+  background: url(../images/icons/burger.png) no-repeat center;
+  background-size: 40px 25px;
+  cursor: pointer;
+  display: block;
+  height: 25px;
+  width: 40px; }
+
+/* line 14, /var/www/cctest/sites/all/themes/cctest/sass/module/_main-menu.scss */
+.pane-system-main-menu .close-menu {
+  background: url(../images/icons/menu-close.png) no-repeat center;
+  background-size: 25px 25px;
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 25px;
+  width: 25px; }
+
+/* line 24, /var/www/cctest/sites/all/themes/cctest/sass/module/_main-menu.scss */
+.pane-system-main-menu .menu {
+  display: none; }
+
+/* line 28, /var/www/cctest/sites/all/themes/cctest/sass/module/_main-menu.scss */
+.pane-system-main-menu .menu {
+  background: white;
+  height: 100%;
+  left: 0;
+  padding: 45px 30px;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  z-index: 3; }
+
+/* line 38, /var/www/cctest/sites/all/themes/cctest/sass/module/_main-menu.scss */
+.pane-system-main-menu .menu li a {
+  font-size: 16px; }
+
+/* line 42, /var/www/cctest/sites/all/themes/cctest/sass/module/_main-menu.scss */
+.pane-system-main-menu .menu li a.active {
+  color: #ed1c8b;
+  text-decoration: none; }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_search.scss */
+.pane-search {
+  float: left;
+  width: 120px;
+  margin-left: 30px; }
+
+/* line 6, /var/www/cctest/sites/all/themes/cctest/sass/module/_search.scss */
+.pane-search input {
+  background: transparent url(../images/icons/search.png) no-repeat center left;
+  background-size: 24px;
+  border-color: transparent transparent #5f6463 transparent;
+  padding: 5px 25px; }
+
+/* line 12, /var/www/cctest/sites/all/themes/cctest/sass/module/_search.scss */
+.pane-search input:focus {
+  border-color: transparent transparent #00bff3 transparent; }
+
+/* line 17, /var/www/cctest/sites/all/themes/cctest/sass/module/_search.scss */
+.pane-search .form-actions {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  /* line 23, /var/www/cctest/sites/all/themes/cctest/sass/module/_search.scss */
+  .pane-search {
+    width: auto; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_support-us.scss */
+.support-us {
+  padding: 40px 0; }
+
+/* line 4, /var/www/cctest/sites/all/themes/cctest/sass/module/_support-us.scss */
+.support-us h2 {
+  border-left: 5px solid #ed1c8b;
+  color: #454a5b;
+  margin-bottom: 35px;
+  padding-top: 5px;
+  padding-left: 15px; }
+
+/* line 12, /var/www/cctest/sites/all/themes/cctest/sass/module/_support-us.scss */
+.support-us p {
+  color: #6f7588;
+  font-weight: 300; }
+
+/* line 16, /var/www/cctest/sites/all/themes/cctest/sass/module/_support-us.scss */
+.support-us p a {
+  background-color: #ed1c8b;
+  border: 0 solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 18px 15px 11px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 35px; }
+
+@media screen and (min-width: 768px) {
+  /* line 16, /var/www/cctest/sites/all/themes/cctest/sass/module/_support-us.scss */
+  .support-us p a {
+    font-size: 16px;
+    padding: 23px 35px 16px 35px; } }
+
+/* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_support-us.scss */
+.support-us p a:before {
+  background-color: #d80780;
+  background-image: url(../images/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  content: '';
+  display: block;
+  position: absolute;
+  border: 0 solid #fff;
+  height: 43px;
+  right: -35px;
+  top: 0;
+  width: 35px; }
+
+@media screen and (min-width: 768px) {
+  /* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_support-us.scss */
+  .support-us p a:before {
+    background-size: 25px;
+    height: 53px;
+    right: -61px;
+    width: 61px; } }
+
+@media screen and (min-width: 768px) {
+  /* line 29, /var/www/cctest/sites/all/themes/cctest/sass/module/_support-us.scss */
+  .support-us p a:before {
+    height: 58px; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+.upcoming-events {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 5px;
+  padding-top: 45px; }
+
+/* line 8, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+.upcoming-events h2 {
+  color: #fff; }
+
+/* line 12, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+.upcoming-events .pane-title {
+  border-left: 5px solid #ed1c8b;
+  padding-left: 15px;
+  padding-top: 5px; }
+
+/* line 18, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+.upcoming-events .views-row {
+  min-height: 404px;
+  position: relative; }
+
+/* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+.upcoming-events .views-row .field-name-title {
+  margin-top: 20px; }
+
+/* line 26, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+.upcoming-events .views-row .field-name-field-image {
+  display: none; }
+
+/* line 33, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+.upcoming-events .slick-dots li button {
+  border: 2px solid #fff;
+  background: transparent; }
+
+/* line 38, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+.upcoming-events .slick-dots li.slick-active button {
+  background: #fff;
+  border: 2px solid #fff; }
+
+@media screen and (min-width: 768px) {
+  /* line 50, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+  .upcoming-events .views-row .field-name-title {
+    margin-top: 105px; }
+  /* line 55, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+  .upcoming-events .slick-dots {
+    bottom: 55px; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list {
+  padding: 50px 50px 50px 0; }
+
+/* line 4, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list h2 {
+  border-left: 5px solid #00bff3;
+  margin-bottom: 35px;
+  padding-left: 15px;
+  color: #454a5b;
+  padding-top: 5px; }
+
+/* line 12, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list .views-row {
+  margin-bottom: 30px; }
+
+/* line 16, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list .views-field {
+  margin-bottom: 10px; }
+
+/* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list .views-field-field-category a {
+  border-left: 5px solid #00bff3;
+  color: #00bff3;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-left: 5px;
+  padding-top: 4px;
+  text-decoration: none; }
+
+/* line 35, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list .views-field-title a {
+  color: #454a5b;
+  line-height: 1.8;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+/* line 42, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list .views-field-title a.active {
+  color: #00bff3; }
+
+/* line 49, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list .views-field-body p {
+  color: #6f7588;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6; }
+
+/* line 57, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list .views-field-field-short-text-1 .field-content {
+  color: #454a5b;
+  font-size: 14px; }
+
+/* line 62, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list .view-footer {
+  margin-top: 50px; }
+
+/* line 65, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list .view-footer a {
+  background-color: #00bff3;
+  border: 0 solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 18px 15px 11px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 768px) {
+  /* line 65, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+  .list .view-footer a {
+    font-size: 16px;
+    padding: 23px 35px 16px 35px; } }
+
+/* line 69, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+.list .view-footer a:before {
+  background-color: #00b0e0;
+  background-image: url(../images/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  content: '';
+  display: block;
+  position: absolute;
+  border: 0 solid #fff;
+  height: 40px;
+  right: -35px;
+  top: 0;
+  width: 35px; }
+
+@media screen and (min-width: 768px) {
+  /* line 69, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+  .list .view-footer a:before {
+    background-size: 25px;
+    height: 53px;
+    right: -61px;
+    width: 61px; } }
+
+@media screen and (min-width: 768px) {
+  /* line 77, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on-list.scss */
+  .list {
+    float: left;
+    padding-right: 55px;
+    width: 50%; } }
+
+/* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+.whats-on {
+  background: -moz-linear-gradient(left, #fff 0%, #fff 50%, #dadadc 50%, #dadadc 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #fff), color-stop(50%, #fff), color-stop(50%, #dadadc), color-stop(100%, #dadadc));
+  background: -webkit-linear-gradient(left, #fff 0%, #fff 50%, #dadadc 50%, #dadadc 100%);
+  background: -o-linear-gradient(left, #fff 0%, #fff 50%, #dadadc 50%, #dadadc 100%);
+  background: -ms-linear-gradient(left, #fff 0%, #fff 50%, #dadadc 50%, #dadadc 100%);
+  background: linear-gradient(to right, #fff 0%, #fff 50%, #dadadc 50%, #dadadc 100%); }
+
+/* line 5, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+.picture {
+  padding-bottom: 50px;
+  padding-top: 100px; }
+
+/* line 9, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+.picture .views-row .node {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  display: none; }
+
+/* line 14, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+.picture .views-row-first .node {
+  display: block; }
+
+/* line 18, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+.picture .field-name-title {
+  position: relative; }
+
+/* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+.picture .field-name-title h2 {
+  background: #00bff3;
+  color: #fff;
+  display: inline-block;
+  padding: 18px 25px 10px 25px; }
+
+/* line 29, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+.picture .field-name-field-short-text-1 .field-item {
+  background: #00b0e0;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 15px 27px 10px 27px; }
+
+/* line 38, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+.picture .field-name-field-image {
+  -webkit-transform: rotate(45deg) translateY(0px);
+  -ms-transform: rotate(45deg) translateY(0px);
+  transform: rotate(45deg) translateY(0px);
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  transform-origin: 50% 50%;
+  width: 200px; }
+
+/* line 47, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+.picture .field-name-field-image .field-item {
+  -webkit-transform: rotate(-45deg) translateY(-61px);
+  -ms-transform: rotate(-45deg) translateY(-61px);
+  transform: rotate(-45deg) translateY(-61px);
+  height: 285px;
+  width: 285px; }
+
+/* line 53, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+.picture .field-name-field-image img {
+  width: 100%; }
+
+@media screen and (min-width: 768px) {
+  /* line 60, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+  .picture {
+    float: left;
+    padding-left: 55px;
+    width: 50%; } }
+
+@media screen and (min-width: 992px) {
+  /* line 70, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+  .picture .field-name-field-image {
+    -webkit-transform: rotate(45deg) translateY(10px);
+    -ms-transform: rotate(45deg) translateY(10px);
+    transform: rotate(45deg) translateY(10px);
+    height: 300px;
+    margin-bottom: 25px;
+    margin-left: 65px;
+    margin-top: 45px;
+    width: 300px; }
+  /* line 79, /var/www/cctest/sites/all/themes/cctest/sass/module/_whats-on.scss */
+  .picture .field-name-field-image .field-item {
+    -webkit-transform: rotate(-45deg) translateY(-88px);
+    -ms-transform: rotate(-45deg) translateY(-88px);
+    transform: rotate(-45deg) translateY(-88px);
+    height: 425px;
+    width: 425px; } }
+
+/*# sourceMappingURL=../sass */

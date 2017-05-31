@@ -1,0 +1,80 @@
+.become-member {
+  background: url(../images/member-bg.png) no-repeat center;
+  padding-bottom: 55px;
+
+  h2 {
+    color: $white;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  p {
+    color: $white;
+  }
+
+  h3 {
+    color: $white;
+    margin-bottom: 10px;
+    line-height: 2.2;
+    text-transform: uppercase;
+  }
+
+  .sub-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .wrapper {
+    margin: 40px 0;
+
+    div {
+      background-size: 65px;
+      margin-bottom: 30px;
+      padding-left: 90px;
+    }
+
+    p {
+      line-height: 2.2;
+    }
+  }
+
+  .promo {
+    background: url(../images/icons/voice.png) no-repeat top left;
+  }
+
+  .develop {
+    background: url(../images/icons/light.png) no-repeat top left;
+  }
+
+  .support {
+    background: url(../images/icons/token.png) no-repeat top left;
+  }
+
+  .url-button {
+
+    a {
+      @include main-btn($blue);
+    }
+
+    a:before {
+      @include arrow-right($dark-blue);
+    }
+  }
+}
+
+@media screen and (min-width: $small_width) {
+  .become-member {
+
+    .wrapper {
+      @include flex-box;
+      justify-content: space-between;
+    }
+
+    .url-button {
+      text-align: center;
+    }
+  }
+}

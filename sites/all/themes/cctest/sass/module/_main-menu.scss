@@ -1,0 +1,47 @@
+.pane-system-main-menu {
+  float: left;
+  padding-top: 7px;
+
+  .burger-menu {
+    background: url(../images/icons/burger.png) no-repeat center;
+    background-size: 40px 25px;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    width: 40px;
+  }
+
+  .close-menu {
+    background: url(../images/icons/menu-close.png) no-repeat center;
+    background-size: 25px 25px;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 25px;
+    width: 25px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu {
+    background: white;
+    height: 100%;
+    left: 0;
+    padding: 45px 30px;
+    position: fixed;
+    top: 0;
+    width: 300px;
+    z-index: 3;
+
+    li a {
+      font-size: 16px;
+    }
+
+    li a.active {
+      color: $rose;
+      text-decoration: none;
+    }
+  }
+}

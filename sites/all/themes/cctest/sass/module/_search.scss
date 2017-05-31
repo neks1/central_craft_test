@@ -1,0 +1,26 @@
+.pane-search {
+  float: left;
+  width: 120px;
+  margin-left: 30px;
+
+  input {
+    background: transparent url(../images/icons/search.png) no-repeat center left;
+    background-size: 24px;
+    border-color: transparent transparent $dark-grey transparent;
+    padding: 5px 25px;
+
+    &:focus {
+      border-color: transparent transparent $blue transparent;
+    }
+  }
+
+  .form-actions {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $small_width) {
+  .pane-search {
+    width: auto;
+  }
+}

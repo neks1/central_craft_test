@@ -1,0 +1,155 @@
+.find-designer-maker {
+  background: $grey;
+  padding-bottom: 50px;
+
+  h2 {
+    color: rgba($light-black, .5);
+    line-height: 54px;
+    padding-bottom: 80px;
+    padding-top: 94px;
+    text-align: center;
+  }
+
+  form {
+    margin: 0 auto;
+    width: 262px;
+  }
+
+  .view-filters {
+    margin-bottom: 80px;
+  }
+
+  .right {
+    background: $white;
+    padding: 30px;
+  }
+
+  .views-widget-filter-title {
+    position: relative;
+
+    label {
+      background: $light-black url(../images/icons/s-search.png) no-repeat center;
+      background-size: 25px;
+      cursor: text;
+      font-size: 0;
+      height: 50px;
+      position: absolute;
+      right: 0;
+      width: 60px;
+      top: 0;
+    }
+  }
+
+  .ajax-progress.ajax-progress-throbber {
+    display: none;
+  }
+
+  .views-widget-filter-title,
+  .views-widget-filter-tid {
+    margin-bottom: 30px;
+  }
+
+  .views-exposed-widget {
+    padding: 0;
+
+    .views-submit-button {
+      display: none;
+    }
+  }
+
+  .views-widget-filter-tid,
+  .views-widget-filter-tid_1 {
+
+    label {
+      display: none;
+    }
+  }
+
+  .view .view-content {
+    margin: 0 auto 60px auto;
+    overflow: hidden;
+    width: 275px;
+  }
+
+  .field-name-title {
+    margin-bottom: 20px;
+
+    p {
+      color: $more-dark-grey;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1;
+    }
+  }
+
+
+  .field-name-field-link a {
+    color: $more-dark-grey;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .views-row {
+    margin-bottom: 30px;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .view-footer a {
+    @include main-btn($rose);
+
+    &:before {
+      @include arrow-right;
+    }
+  }
+}
+
+@media screen and (min-width: $small_width) {
+  .find-designer-maker {
+
+    .view .view-content {
+      width: 100%;
+
+      .slick-list {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+
+      .views-row {
+        margin: 0 15px;
+      }
+    }
+
+    form {
+      width: 100%;
+    }
+
+    .views-widget-filter-title {
+      width: 40%;
+    }
+
+    .views-widget-filter-title,
+    .views-widget-filter-tid {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: $main_width) {
+  .find-designer-maker {
+
+    .views-widget-filter-title {
+      width: 45%;
+    }
+
+    .views-widget-filter-title,
+    .views-widget-filter-tid {
+      margin-right: 51px;
+    }
+  }
+}

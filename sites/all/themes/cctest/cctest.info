@@ -1,0 +1,16 @@
+name = Frontend
+description = CC Site
+core = 7.x
+version = 7.3
+datestamp = 1447187950
+screenshot = screenshot.jpg
+
+stylesheets[all][] = dist/main.css
+;stylesheets[all][] = dist/main.min.css
+
+regions[header]  = Header
+regions[content] = Content
+regions[footer]  = Footer
+
+scripts[] = dist/main.js
+;scripts[] = dist/main.min.js
