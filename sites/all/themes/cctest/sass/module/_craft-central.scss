@@ -9,20 +9,19 @@
   }
 
   p {
-    font-size: 16px;
-    font-weight: $light;
-  }
+    font-size: $url;
+    font-weight: 300;
 
-  p:last-child {
-    text-align: center;
-    margin-top: 60px;
-  }
+    &:last-child {
+      text-align: center;
+      margin-top: 60px;
+    }
 
-  p a {
-    @include main-btn($rose, 2px);
+    a {
+      @include main-btn($rose, 2px);
+    }
 
-
-    &:before {
+    a:before {
       @include arrow-right($dark-rose, 2px, -2px, 44px);
     }
   }

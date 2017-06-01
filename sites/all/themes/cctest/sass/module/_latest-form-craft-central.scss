@@ -20,20 +20,17 @@
     position: relative;
     min-height: 346px;
 
-    &:hover {
+    &:hover .field:not(.field-name-field-image) {
+      @include transition(all 1s ease);
+      opacity: 1;
+      position: relative;
+      z-index: 1;
+    }
 
-      .field:not(.field-name-field-image) {
-        @include transition(all 1s ease);
-        opacity: 1;
-        position: relative;
-        z-index: 1;
-      }
-
-      .field-name-field-image {
-        @include transition(all 1s ease);
-        opacity: 0;
-        z-index: 0;
-      }
+    &:hover .field-name-field-image {
+      @include transition(all 1s ease);
+      opacity: 0;
+      z-index: 0;
     }
 
     .field-name-field-image {
@@ -52,43 +49,43 @@
 
     .field-name-title {
       padding-top: 35px;
+    }
 
-      h3 {
-        color: $light-black;
-        font-size: 24px;
-        font-weight: 300;
-      }
+    .field-name-title h3 {
+      color: $light-black;
+      font-size: $big-h3;
+      font-weight: 300;
     }
 
     .field-name-body {
       padding-bottom: 45px;
       padding-top: 25px;
-
-      p {
-        color: $input-text-color;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.5;
-        min-height: 120px;
-        overflow: hidden;
-      }
     }
 
-    .field-name-field-short-text-1 {
-      padding-bottom: 30px;
+    .field-name-body p {
+      color: $input-text-color;
+      font-size: $url;
+      font-weight: 300;
+      line-height: 1.5;
+      min-height: 120px;
+      overflow: hidden;
+    }
 
-      .field-item {
-        color: $light-black;
-      }
+    .field-type-text {
+      padding-bottom: 30px;
+    }
+
+    .field-type-text .field-item {
+      color: $light-black;
     }
 
     .field-name-field-like-share .field-items {
       @include flex-box;
       align-items: center;
+    }
 
-      .field-item {
-        margin-right: 10px;
-      }
+    .field-name-field-like-share .field-items .field-item {
+      margin-right: 10px;
     }
   }
 
@@ -103,7 +100,6 @@
 
 @media screen and (min-width: $small_width) {
   .latest-from-craft-central {
-
     .view .view-content {
       width: 100%;
 

@@ -4,7 +4,7 @@
   position: relative;
 
   .login {
-    background: url(../images/icons/icon.png) no-repeat center;
+    background: url('../images/icons/icon.png') no-repeat center;
     background-size: 30px;
     cursor: pointer;
     display: block;
@@ -68,9 +68,7 @@
 }
 
 @media screen and (min-width: $small_width) {
-  .pane-user-login {
-    form {
-      width: 300px;
-    }
+  .pane-user-login form {
+    width: 300px;
   }
 }

@@ -3,15 +3,15 @@
 
   h2 {
     color: $light-black;
-    font-size: 24px;
+    font-size: $big-h3;
     padding-bottom: 40px;
     padding-top: 20px;
   }
 
   .view-content {
-      margin: 0 auto;
-      width: 230px;
-    }
+    margin: 0 auto;
+    width: 230px;
+  }
 
   img {
     margin: 0 auto;
@@ -32,12 +32,12 @@
   }
 
   .slick-prev {
-    background: url(../images/icons/arrow-l.png) no-repeat center;
+    background: url('../images/icons/arrow-l.png') no-repeat center;
     background-size: 13px;
   }
 
   .slick-next {
-    background: url(../images/icons/arrow-r.png) no-repeat center;
+    background: url('../images/icons/arrow-r.png') no-repeat center;
     background-size: 13px;
   }
 }

@@ -1,5 +1,5 @@
 .become-member {
-  background: url(../images/member-bg.png) no-repeat center;
+  background: url('../images/member-bg.jpg') no-repeat center;
   padding-bottom: 55px;
 
   h2 {
@@ -20,7 +20,7 @@
   }
 
   .sub-title {
-    font-size: 16px;
+    font-size: $url;
     font-weight: 300;
     line-height: 1;
     padding-top: 40px;
@@ -42,19 +42,18 @@
   }
 
   .promo {
-    background: url(../images/icons/voice.png) no-repeat top left;
+    background: url('../images/icons/voice.png') no-repeat top left;
   }
 
   .develop {
-    background: url(../images/icons/light.png) no-repeat top left;
+    background: url('../images/icons/light.png') no-repeat top left;
   }
 
   .support {
-    background: url(../images/icons/token.png) no-repeat top left;
+    background: url('../images/icons/token.png') no-repeat top left;
   }
 
   .url-button {
-
     a {
       @include main-btn($blue);
     }
@@ -67,7 +66,6 @@
 
 @media screen and (min-width: $small_width) {
   .become-member {
-
     .wrapper {
       @include flex-box;
       justify-content: space-between;

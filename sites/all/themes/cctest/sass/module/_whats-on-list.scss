@@ -17,21 +17,17 @@
     margin-bottom: 10px;
   }
 
-  .views-field-field-category {
-
-    a {
-      border-left: 5px solid $blue;
-      color: $blue;
-      font-size: 14px;
-      line-height: 1.2;
-      padding-left: 5px;
-      padding-top: 4px;
-      text-decoration: none;
-    }
+  .views-field-field-category a {
+    border-left: 5px solid $blue;
+    color: $blue;
+    font-size: $text;
+    line-height: 1.2;
+    padding-left: 5px;
+    padding-top: 4px;
+    text-decoration: none;
   }
 
   .views-field-title {
-
     a {
       color: $light-black;
       line-height: 1.8;
@@ -44,19 +40,14 @@
     }
   }
 
-  .views-field-body {
-
-    p {
-      color: $input-text-color;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 1.6;
-    }
+  .views-field-body p {
+    color: $input-text-color;
+    font-weight: 300;
+    line-height: 1.6;
   }
 
   .views-field-field-short-text-1 .field-content {
     color: $light-black;
-    font-size: 14px;
   }
 
   .view-footer {
@@ -73,7 +64,6 @@
 }
 
 @media screen and (min-width: $small_width) {
-
   .list {
     float: left;
     padding-right: 55px;

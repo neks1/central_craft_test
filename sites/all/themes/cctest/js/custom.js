@@ -22,23 +22,14 @@
 
   Drupal.behaviors.burgerMenu = {
     attach: function (context, settings) {
-      $('.header .pane-system-main-menu', context).prepend('<a class="burger-menu"></a>');
-      $(".burger-menu", context).click(function() {
-        $(".pane-system-main-menu .menu", context).slideToggle('show');
-      });
-      $('.pane-system-main-menu .menu', context).prepend('<a class="close-menu"></a>');
-      $(".close-menu", context).click(function() {
-        $(".pane-system-main-menu .menu", context).slideToggle('slow');
-      });
-    }
-  };
-
-  Drupal.behaviors.user = {
-    attach: function (context, settings) {
-      $('.header .pane-user-login', context).prepend('<a class="login"></a>');
-      $(".login", context).click(function(e) {
-        e.preventDefault();
-        $(".pane-user-login form", context).slideToggle('slow');
+      this.slideElement('.header .pane-system-main-menu', 'burger-menu', '.burger-menu', '.pane-system-main-menu .menu');
+      this.slideElement('.pane-system-main-menu .menu', 'close-menu', '.close-menu', '.pane-system-main-menu .menu');
+      this.slideElement('.header .pane-user-login', 'login', '.login', '.pane-user-login form');
+    },
+    slideElement: function(el, elClass, elClick, elSlow) {
+      $(el, context).prepend('<a class=\"' + elClass + '\"></a>');
+      $(elClick, context).click(function() {
+        $(elShow, context).slideToggle('slow');
       });
     }
   };

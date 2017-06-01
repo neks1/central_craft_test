@@ -17,10 +17,6 @@ var $files = [
   './node_modules/slick-carousel/slick/ajax-loader.gif'
 ];
 
-var $sprites = [
-  'images/icons/*.png'
-];
-
 var $css = [
   './node_modules/slicknav/dist/slicknav.min.css',
   './node_modules/slick-carousel/slick/slick.css',
@@ -35,18 +31,6 @@ var $js = [
   './node_modules/select2/dist/js/select2.min.js',
   './js/custom.js'
 ];
-
-/* Sprites */
-gulp.task('sprite', function () {
-  return  gulp.src($sprites)
-    .pipe(spritesmith({
-      imgName: 'sprite.png',
-      cssName: '_sprite.scss',
-      padding: 1
-    }))
-    .pipe(gulpif('*.png', gulp.dest('./dist/')))
-    .pipe(gulpif('*.scss', gulp.dest('./sass/abstractions/')));
-});
 
 /* Files */
 gulp.task('files', function () {
@@ -89,7 +73,7 @@ gulp.task('js_concat', function () {
 });
 
 /* Browser sync*/
-gulp.task('sass', ['sprite'], function () {
+gulp.task('sass', function () {
   return gulp.src(['./sass/**/*.s*ss'])
     .pipe(plumber(({
       errorHandler: function (err) {
@@ -113,13 +97,12 @@ gulp.task('sass', ['sprite'], function () {
 });
 
 /* Watch */
-gulp.task('watch', ['css_concat', 'js_concat', 'sprite', 'files'], function() {
+gulp.task('watch', ['css_concat', 'js_concat', 'files'], function() {
   browserSync.init({
     proxy: {
       target: "cctest.loc"
     }
   });
-  gulp.watch('./images/icons/', ['sprite']);
   gulp.watch('./sass/**/*.s*ss', ['css_concat']);
   gulp.watch('./stylesheets/styles.css').on('change', browserSync.reload);
   gulp.watch('./js/*.js', ['js_concat']).on('change', browserSync.reload);

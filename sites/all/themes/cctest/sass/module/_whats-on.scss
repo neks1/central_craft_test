@@ -17,20 +17,20 @@
 
   .field-name-title {
     position: relative;
+
+    h2 {
+      background: $blue;
+      color: $white;
+      display: inline-block;
+      padding: 18px 25px 10px 25px;
+    }
   }
 
-  .field-name-title h2 {
-    background: $blue;
-    color: $white;
-    display: inline-block;
-    padding: 18px 25px 10px 25px;
-  }
-
-  .field-name-field-short-text-1 .field-item {
+  .field-type-text .field-item {
     background: $dark-blue;
     color: $white;
     display: inline-block;
-    font-size: 24px;
+    font-size: $big-h3;
     font-weight: 300;
     padding: 15px 27px 10px 27px;
   }
@@ -66,7 +66,6 @@
 
 @media screen and (min-width: $medium_width) {
   .picture {
-
     .field-name-field-image {
       @include transform(rotate(45deg) translateY(10px));
       height: 300px;

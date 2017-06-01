@@ -1,5 +1,5 @@
 .container {
-  @include container();
+  @include container;
 }
 
 .padding {
@@ -11,7 +11,6 @@
 }
 
 @media screen and (min-width: $medium_width) {
-
   .two-sidebars {
     @include row;
 
@@ -30,7 +29,6 @@
 
   // When two sidebars exists
   .two-sidebars {
-
     .main-content {
       width: 50%;
     }

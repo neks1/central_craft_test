@@ -3,7 +3,7 @@
   padding-top: 7px;
 
   .burger-menu {
-    background: url(../images/icons/burger.png) no-repeat center;
+    background: url('../images/icons/burger.png') no-repeat center;
     background-size: 40px 25px;
     cursor: pointer;
     display: block;
@@ -12,7 +12,7 @@
   }
 
   .close-menu {
-    background: url(../images/icons/menu-close.png) no-repeat center;
+    background: url('../images/icons/menu-close.png') no-repeat center;
     background-size: 25px 25px;
     cursor: pointer;
     display: block;
@@ -26,7 +26,7 @@
   }
 
   .menu {
-    background: white;
+    background: $white;
     height: 100%;
     left: 0;
     padding: 45px 30px;

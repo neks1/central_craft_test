@@ -4,11 +4,18 @@
 
 $lato: 'Roboto', sans-serif;
 
+@include font('Helvetica', HelveticaBold, 700, normal);
 @include font('Helvetica', HelveticaRegular, 400, normal);
 @include font('Helvetica', HelveticaLight, 300, normal);
 
 $helvetica: 'Helvetica', sans-serif;
 
-$light: 300;
-$normal: 400;
-$bold: 700;
+$text: 14px;
+$h1: 48px;
+$h2: 36px;
+$h3: 14px;
+$big-h3: 24px;
+
+$url: 16px;
+$resp-h2: 22px;
+$input: 16px;

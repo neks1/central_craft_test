@@ -76,16 +76,14 @@
 
     p {
       color: $more-dark-grey;
-      font-size: 24px;
+      font-size: $big-h3;
       font-weight: 400;
       line-height: 1;
     }
   }
 
-
   .field-name-field-link a {
     color: $more-dark-grey;
-    font-size: 16px;
     font-weight: 400;
     line-height: 1;
     text-decoration: none;
@@ -111,7 +109,6 @@
 
 @media screen and (min-width: $small_width) {
   .find-designer-maker {
-
     .view .view-content {
       width: 100%;
 
@@ -142,7 +139,6 @@
 
 @media screen and (min-width: $main_width) {
   .find-designer-maker {
-
     .views-widget-filter-title {
       width: 45%;
     }

@@ -11,7 +11,6 @@
   }
 
   .field-name-field-text {
-
     p {
       color: $white;
       font-weight: 300;
@@ -20,17 +19,18 @@
 
     h3 {
       color: $white;
-      font-size: 24px;
+      font-size: $big-h3;
       font-weight: 400;
       margin-bottom: 15px;
     }
   }
+
   .right {
     margin: 0 auto;
     width: 260px;
   }
 
-  .field-name-field-short-text-1 {
+  .field-type-text {
     background: $white;
     margin-bottom: 30px;
     min-height: 115px;
@@ -39,7 +39,7 @@
 
     .field-item {
       color: $light-black;
-      font-size: 16px;
+      font-size: $url;
       line-height: 1.7;
       text-transform: uppercase;
     }
@@ -48,7 +48,6 @@
 
 @media screen and (min-width: 768px) {
   .book-space {
-
     .bean-two-column {
       @include flex-box;
     }

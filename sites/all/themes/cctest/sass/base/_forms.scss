@@ -12,44 +12,6 @@ button * {
   }
 }
 
-select,
-input[type="file"],
-input[type="password"],
-input[type="text"] {
-}
-
-input[type="submit"],
-button {
-}
-
-select {
-}
-
-select:hover {
-  cursor: pointer;
-}
-
-textarea {
-}
-
-input[type="checkbox"] {
-  @include btnappearence(checkbox);
-
-  + label {
-  }
-
-  &:checked + label {
-  }
-}
-
-input[type="radio"] {
-
-  + label {
-  }
-  &:checked + label {
-  }
-}
-
 input[type="password"],
 input[type="email"],
 input[type="text"] {
@@ -57,7 +19,7 @@ input[type="text"] {
   background: $white;
   border: 2px solid $light-black;
   color: rgba($input-text-color, .7);
-  font-size: 16px;
+  font-size: $input;
   font-weight: 300;
   line-height: 1;
   width: 100%;
@@ -68,43 +30,40 @@ input[type="submit"] {
   background: $rose;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: $input;
   padding: 19px 12px 13px 12px;
   width: 100%;
 }
 
-
-//Select Custom
-
+// Select Custom
 .select2-container {
   border: 2px solid $light-black;
-}
 
-.select2-container--default .select2-selection--single {
-  border-radius: 0;
+  .select2-selection--single {
+    height: 46px;
+
+    .select2-selection__rendered {
+      color: rgba($input-text-color, .7);
+      padding: 10px 25px;
+    }
+  }
 }
 
 .select2-selection__arrow {
   background: $light-black;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-  border-color: $white transparent transparent transparent;
-}
+.select2-container--default .select2-selection--single {
+  border-radius: 0;
 
-.select2-container .select2-selection--single {
-  height: 46px;
-}
+  .select2-selection__arrow {
+    height: 46px;
+    right: 0;
+    top: 0;
+    width: 50px;
 
-.select2-container .select2-selection--single .select2-selection__rendered {
-  color: rgba($input-text-color, .7);
-  padding: 10px 25px;
+    b {
+      border-color: $white transparent transparent transparent;
+    }
+  }
 }
-
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 46px;
-  right: 0;
-  top: 0;
-  width: 50px;
-}
-
