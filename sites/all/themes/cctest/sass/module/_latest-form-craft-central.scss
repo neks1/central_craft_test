@@ -17,8 +17,9 @@
 
   .views-row {
     background: $white;
+    min-height: 350px;
+    overflow: hidden;
     position: relative;
-    min-height: 346px;
 
     &:hover .field:not(.field-name-field-image) {
       @include transition(all 1s ease);
@@ -38,6 +39,10 @@
       left: 0;
       position: absolute;
       top: 0;
+    }
+
+    .field-name-field-image img {
+      max-width: none;
     }
 
     .field:not(.field-name-field-image) {
@@ -66,17 +71,19 @@
       color: $input-text-color;
       font-size: $url;
       font-weight: 300;
+      height: 115px;
       line-height: 1.5;
-      min-height: 120px;
+      max-height: 115px;
       overflow: hidden;
     }
 
     .field-type-text {
-      padding-bottom: 30px;
+      padding-bottom: 25px;
     }
 
     .field-type-text .field-item {
       color: $light-black;
+      line-height: 1.4;
     }
 
     .field-name-field-like-share .field-items {
@@ -110,6 +117,11 @@
 
       .views-row {
         margin: 0 15px;
+      }
+
+      .field-name-body p {
+        height: 120px;
+        max-height: 120px;
       }
     }
   }

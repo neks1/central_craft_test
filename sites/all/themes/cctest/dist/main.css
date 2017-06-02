@@ -1264,10 +1264,11 @@ input[type="submit"] {
 /* line 18, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row {
   background: #fff;
-  position: relative;
-  min-height: 346px; }
+  min-height: 350px;
+  overflow: hidden;
+  position: relative; }
 
-/* line 23, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 24, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row:hover .field:not(.field-name-field-image) {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -1277,7 +1278,7 @@ input[type="submit"] {
   position: relative;
   z-index: 1; }
 
-/* line 30, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 31, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row:hover .field-name-field-image {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -1286,7 +1287,7 @@ input[type="submit"] {
   opacity: 0;
   z-index: 0; }
 
-/* line 36, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 37, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row .field-name-field-image {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -1296,7 +1297,11 @@ input[type="submit"] {
   position: absolute;
   top: 0; }
 
-/* line 43, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 44, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+.latest-from-craft-central .views-row .field-name-field-image img {
+  max-width: none; }
+
+/* line 48, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row .field:not(.field-name-field-image) {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -1306,50 +1311,52 @@ input[type="submit"] {
   padding-left: 35px;
   padding-right: 65px; }
 
-/* line 50, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 55, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row .field-name-title {
   padding-top: 35px; }
 
-/* line 54, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 59, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row .field-name-title h3 {
   color: #454a5b;
   font-size: 24px;
   font-weight: 300; }
 
-/* line 60, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 65, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row .field-name-body {
   padding-bottom: 45px;
   padding-top: 25px; }
 
-/* line 65, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 70, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row .field-name-body p {
   color: #6f7588;
   font-size: 16px;
   font-weight: 300;
+  height: 115px;
   line-height: 1.5;
-  min-height: 120px;
+  max-height: 115px;
   overflow: hidden; }
 
-/* line 74, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 80, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row .field-type-text {
-  padding-bottom: 30px; }
+  padding-bottom: 25px; }
 
-/* line 78, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 84, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row .field-type-text .field-item {
-  color: #454a5b; }
+  color: #454a5b;
+  line-height: 1.4; }
 
-/* line 82, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 89, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row .field-name-field-like-share .field-items {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   align-items: center; }
 
-/* line 87, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 94, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .views-row .field-name-field-like-share .field-items .field-item {
   margin-right: 10px; }
 
-/* line 92, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 99, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .view-footer a {
   background-color: #ed1c8b;
   border: 0 solid #fff;
@@ -1362,12 +1369,12 @@ input[type="submit"] {
   text-transform: uppercase; }
 
 @media screen and (min-width: 768px) {
-  /* line 92, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  /* line 99, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
   .latest-from-craft-central .view-footer a {
     font-size: 16px;
     padding: 23px 35px 16px 35px; } }
 
-/* line 95, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+/* line 102, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
 .latest-from-craft-central .view-footer a:before {
   background-color: #d80780;
   background-image: url(../images/icons/arrow.png);
@@ -1384,7 +1391,7 @@ input[type="submit"] {
   width: 35px; }
 
 @media screen and (min-width: 768px) {
-  /* line 95, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  /* line 102, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
   .latest-from-craft-central .view-footer a:before {
     background-size: 25px;
     height: 53px;
@@ -1392,16 +1399,20 @@ input[type="submit"] {
     width: 61px; } }
 
 @media screen and (min-width: 768px) {
-  /* line 103, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  /* line 110, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
   .latest-from-craft-central .view .view-content {
     width: 100%; }
-  /* line 106, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  /* line 113, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
   .latest-from-craft-central .view .view-content .slick-list {
     margin-left: -15px;
     margin-right: -15px; }
-  /* line 111, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  /* line 118, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
   .latest-from-craft-central .view .view-content .views-row {
-    margin: 0 15px; } }
+    margin: 0 15px; }
+  /* line 122, /var/www/cctest/sites/all/themes/cctest/sass/module/_latest-form-craft-central.scss */
+  .latest-from-craft-central .view .view-content .field-name-body p {
+    height: 120px;
+    max-height: 120px; } }
 
 /* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_login.scss */
 .pane-user-login {
@@ -1480,6 +1491,7 @@ input[type="submit"] {
 /* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_logo.scss */
 .pane-page-logo {
   float: right;
+  margin-bottom: 30px;
   width: 225px; }
 
 /* line 1, /var/www/cctest/sites/all/themes/cctest/sass/module/_mailing-list.scss */
