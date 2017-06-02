@@ -29,7 +29,7 @@
     slideElement: function(el, elClass, elClick, elSlow, context) {
       $(el, context).prepend('<a class=\"' + elClass + '\"></a>');
       $(elClick, context).click(function() {
-        $(elShow, context).slideToggle('slow');
+        $(elSlow, context).slideToggle('slow');
       });
     }
   };

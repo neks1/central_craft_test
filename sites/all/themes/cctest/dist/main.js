@@ -56,7 +56,7 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
     slideElement: function(el, elClass, elClick, elSlow, context) {
       $(el, context).prepend('<a class=\"' + elClass + '\"></a>');
       $(elClick, context).click(function() {
-        $(elShow, context).slideToggle('slow');
+        $(elSlow, context).slideToggle('slow');
       });
     }
   };
