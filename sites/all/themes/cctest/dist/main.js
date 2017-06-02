@@ -49,11 +49,11 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
 
   Drupal.behaviors.burgerMenu = {
     attach: function (context, settings) {
-      this.slideElement('.header .pane-system-main-menu', 'burger-menu', '.burger-menu', '.pane-system-main-menu .menu');
-      this.slideElement('.pane-system-main-menu .menu', 'close-menu', '.close-menu', '.pane-system-main-menu .menu');
-      this.slideElement('.header .pane-user-login', 'login', '.login', '.pane-user-login form');
+      this.slideElement('.header .pane-system-main-menu', 'burger-menu', '.burger-menu', '.pane-system-main-menu .menu', context);
+      this.slideElement('.pane-system-main-menu .menu', 'close-menu', '.close-menu', '.pane-system-main-menu .menu', context);
+      this.slideElement('.header .pane-user-login', 'login', '.login', '.pane-user-login form', context);
     },
-    slideElement: function(el, elClass, elClick, elSlow) {
+    slideElement: function(el, elClass, elClick, elSlow, context) {
       $(el, context).prepend('<a class=\"' + elClass + '\"></a>');
       $(elClick, context).click(function() {
         $(elShow, context).slideToggle('slow');
