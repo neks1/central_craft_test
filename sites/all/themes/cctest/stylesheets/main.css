@@ -769,19 +769,22 @@ input[type="submit"] {
   margin: 0 auto; }
 
 @media screen and (min-width: 768px) {
-  /* line 17, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
+  /* line 16, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
+  .main-slider {
+    padding: 18px 25px; }
+  /* line 19, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
   .main-slider .node-main-slider {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     align-items: flex-end; }
-  /* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
+  /* line 24, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
   .main-slider .left {
     margin: 0;
     width: 75%; } }
 
 @media screen and (min-width: 1200px) {
-  /* line 30, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
+  /* line 32, /var/www/cctest/sites/all/themes/cctest/sass/module/_first-slider.scss */
   .main-slider .left {
     width: 50%; } }
 
@@ -894,14 +897,11 @@ input[type="submit"] {
 
 @media screen and (min-width: 768px) {
   /* line 51, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
-  .front-slider {
-    padding: 18px 25px; }
-  /* line 54, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
   .front-slider .field-type-text .field-item {
     font-size: 24px; } }
 
 @media screen and (min-width: 1200px) {
-  /* line 61, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
+  /* line 57, /var/www/cctest/sites/all/themes/cctest/sass/module/_front-slider.scss */
   .front-slider .slick-dots {
     bottom: 0px;
     position: absolute;
@@ -1353,46 +1353,66 @@ input[type="submit"] {
   background-size: cover;
   background-position: center;
   padding-bottom: 5px;
-  padding-top: 45px; }
+  padding-top: 45px;
+  position: relative; }
 
-/* line 8, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+/* line 9, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
 .upcoming-events h2 {
   color: #fff; }
 
-/* line 12, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+/* line 13, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
 .upcoming-events .pane-title {
   border-left: 5px solid #ed1c8b;
   padding-left: 15px;
   padding-top: 5px; }
 
-/* line 18, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+/* line 19, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
 .upcoming-events .views-row {
-  min-height: 404px;
+  min-height: 237px;
   position: relative; }
 
-/* line 22, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+/* line 23, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
 .upcoming-events .views-row .field-name-title {
   margin-top: 20px; }
 
-/* line 26, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+/* line 27, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
 .upcoming-events .views-row .field-name-field-image {
   display: none; }
 
-/* line 32, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+/* line 33, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
 .upcoming-events .slick-dots li button {
   border: 2px solid #fff;
   background: transparent; }
 
-/* line 37, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+/* line 38, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
 .upcoming-events .slick-dots li.slick-active button {
   background: #fff;
   border: 2px solid #fff; }
 
+/* line 44, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+.upcoming-events .slider-wrapper-img {
+  height: 500px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1; }
+
+/* line 52, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+.upcoming-events .slider-wrapper-img .image {
+  min-height: 350px; }
+
 @media screen and (min-width: 768px) {
-  /* line 46, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+  /* line 60, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+  .upcoming-events .views-row {
+    min-height: 404px; }
+  /* line 63, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
   .upcoming-events .views-row .field-name-title {
     margin-top: 105px; }
-  /* line 50, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+  /* line 68, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
+  .upcoming-events .slider-wrapper-img .image {
+    min-height: 535px; }
+  /* line 72, /var/www/cctest/sites/all/themes/cctest/sass/module/_upcoming-events.scss */
   .upcoming-events .slick-dots {
     bottom: 55px; } }
 

@@ -4,6 +4,7 @@
   background-position: center;
   padding-bottom: 5px;
   padding-top: 45px;
+  position: relative;
 
   h2 {
     color: $white;
@@ -16,7 +17,7 @@
   }
 
   .views-row {
-    min-height: 404px;
+    min-height: 237px;
     position: relative;
 
     .field-name-title {
@@ -39,12 +40,33 @@
       border: 2px solid $white;
     }
   }
+
+  .slider-wrapper-img {
+    height: 500px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+    .image {
+      min-height: 350px;
+    }
+  }
 }
 
 @media screen and (min-width: $small_width) {
   .upcoming-events {
-    .views-row .field-name-title {
-      margin-top: 105px;
+    .views-row {
+      min-height: 404px;
+
+      .field-name-title {
+        margin-top: 105px;
+      }
+    }
+
+    .slider-wrapper-img .image {
+      min-height: 535px;
     }
 
     .slick-dots {

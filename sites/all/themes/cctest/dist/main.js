@@ -63,23 +63,39 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
 
   Drupal.behaviors.upcomigEventsSlider = {
     attach: function (context, settings) {
-      $('.upcoming-events .view > .view-content', context).on('init', function(){
-        var $src = $('.upcoming-events .view-content .slick-slide.slick-current.slick-active img', context).attr('src');
-        $('.upcoming-events', context).css('background-image', 'url('+ $src + ')');
-      })
-      .slick({
+      var $slider             = $('.upcoming-events .view > .view-content', context);
+      var $sliderImages       = $slider.find('img');
+      var $sliderImagesLength = $slider.find('img').length;
+
+      for (var i = 0; i < $sliderImagesLength; i++) {
+        $($sliderImages[i]).clone().addClass('image').appendTo('.upcoming-events');
+      };
+
+      $('.image', context).wrapAll('<div class="slider-wrapper-img"></div>');
+
+      var $slideImg = $('.slider-wrapper-img', context);
+
+      $slideImg.slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        asNavFor: $slider
+      });
+
+      $slider.slick({
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         autoplay: true,
         autoplaySpeed: 5000,
-        arrows: false
-      })
-     .on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        var src = $('.upcoming-events .view-content .slick-slide.slick-current.slick-active + .slick-slide img', context).attr('src');
-        $('.upcoming-events', context).css('background-image', 'url('+ src + ')');
-      })
+        arrows: false,
+        asNavFor: $slideImg
+      });
     }
   };
 

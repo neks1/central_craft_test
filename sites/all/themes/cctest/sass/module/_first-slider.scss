@@ -14,6 +14,8 @@
 
 @media screen and (min-width: $small_width) {
   .main-slider {
+    padding: 18px 25px;
+
     .node-main-slider {
       @include flex-box;
       align-items: flex-end;

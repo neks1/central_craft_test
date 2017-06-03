@@ -48,12 +48,8 @@
 }
 
 @media screen and (min-width: $small_width) {
-  .front-slider {
-    padding: 18px 25px;
-
-    .field-type-text .field-item {
-      font-size: $big-h3;
-    }
+  .front-slider .field-type-text .field-item {
+    font-size: $big-h3;
   }
 }
 
