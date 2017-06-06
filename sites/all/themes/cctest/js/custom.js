@@ -48,7 +48,7 @@
 
       var $slideImg = $('.slider-wrapper-img', context);
 
-      $slideImg.slick({
+      var $wrapSlider = {
         dots: false,
         infinite: true,
         speed: 500,
@@ -57,18 +57,14 @@
         autoplaySpeed: 5000,
         arrows: false,
         asNavFor: $slider
-      });
+      }
 
-      $slider.slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: false,
-        asNavFor: $slideImg
-      });
+      $slideImg.slick($wrapSlider);
+
+      $wrapSlider.dots = true;
+      $wrapSlider.asNavFor = $slideImg;
+
+      $slider.slick($wrapSlider);
     }
   };
 
